@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>小米手机5</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/view.css">
+    <script src="jquery-2.2.3.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <div class="header">
+        <div class="left">
+            <a href="">
+                <img src="images/icon_back_n.png" alt="">   
+            </a>
+        </div>
+        <div class="search">
+            <a href="search.html">
+                <img src="images/search.png" alt="">
+            </a>
+        </div>
+    </div>
+    <div class="banner">
+        <img src="images/T5-1.jpg" alt="">
+    </div>
+    <div class="name">
+        <p>小米手机5 标准版 3GB + 32GB / 3D玻璃<span><strong>1999</strong>元</span></p>
+        <div class="itg"></div>
+    </div>
+</div>
+</body>
+</html>
+<script>
+    $(function(){
+        function fullwidth(){
+            if($('body').width() >= 720){
+                $('html').css('font-size', 100 + 'px');
+                return;
+            }
+            var scale = $('body').width() / 720;
+            $('html').css('font-size',scale * 100 + 'px');
+        }
+        fullwidth();
+        $(window).resize(function(){
+            fullwidth();
+        })
+    });
+</script>
